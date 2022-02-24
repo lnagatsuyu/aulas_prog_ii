@@ -2,58 +2,224 @@ import java.util.*;
 
 public class Principal {
 
-    public static void main(String args[]){
+    public static void main(String[] args){
 
         Scanner read = new Scanner(System.in);
+        String cpf, nome, email;
+        int anoNascimento, numero;
+        float saldo, debito, credito;
+
+        System.out.println("Cliente 01");
 
         System.out.println("Insira o cpf");
-        String cpf = read.nextLine();
+        cpf = read.nextLine();
 
         System.out.println("Insira o ano de nascimento");
-        int anoNascimento = read.nextInt();
+        anoNascimento = read.nextInt();
         read.nextLine();
 
         System.out.println("Insira o nome");
-        String nome = read.nextLine();
+        nome = read.nextLine();
 
         System.out.println("Insira o email");
-        String email = read.nextLine();
+        email = read.nextLine();
 
         Cliente cliente_01 = new Cliente(cpf, anoNascimento, nome, email);
+/*--------------------------------------------------------------------------------*/
+        System.out.println("Cliente 02");
 
+        System.out.println("Insira o cpf");
+        cpf = read.nextLine();
+
+        System.out.println("Insira o ano de nascimento");
+        anoNascimento = read.nextInt();
+        read.nextLine();
+
+        System.out.println("Insira o nome");
+        nome = read.nextLine();
+
+        System.out.println("Insira o email");
+        email = read.nextLine();
+
+        Cliente cliente_02 = new Cliente(cpf, anoNascimento, nome, email);
+
+ /*--------------------------------------------------------------------------------*/
+
+        System.out.println("Cliente 03");
+        System.out.println("Insira o cpf");
+        cpf = read.nextLine();
+
+        System.out.println("Insira o ano de nascimento");
+        anoNascimento = read.nextInt();
+        read.nextLine();
+
+        System.out.println("Insira o nome");
+        nome = read.nextLine();
+
+        System.out.println("Insira o email");
+        email = read.nextLine();
+
+        Cliente cliente_03 = new Cliente(cpf, anoNascimento, nome, email);
+/*--------------------------------------------------------------------------------*/
+
+        System.out.println("Cliente 04");
+        System.out.println("Insira o cpf");
+        cpf = read.nextLine();
+
+        System.out.println("Insira o ano de nascimento");
+        anoNascimento = read.nextInt();
+        read.nextLine();
+
+        System.out.println("Insira o nome");
+        nome = read.nextLine();
+
+        System.out.println("Insira o email");
+        email = read.nextLine();
+
+        Cliente cliente_04 = new Cliente(cpf, anoNascimento, nome, email);
+
+/*--------------------------------------------------------------------------------*/
+        System.out.println("Conta 01");
         System.out.println("Insira o numero da conta");
-        int numero = read.nextInt();
+        numero = read.nextInt();
 
         System.out.println("Insira o saldo");
-        float saldo = read.nextFloat();
+        saldo = read.nextFloat();
 
         Conta conta_01 = new Conta(numero, saldo);
 
         System.out.println("Insira o valor a ser debitado: ");
-        float debito = read.nextFloat();
+        debito = read.nextFloat();
 
         conta_01.debitaSaldo(debito);
 
         System.out.println("Insira o valor a ser creditado: ");
-        float credito = read.nextFloat();
+        credito = read.nextFloat();
 
         conta_01.creditaSaldo(credito);
 
-        System.out.println(cliente_01.retornaCliente());
-        System.out.println(conta_01.retornaConta());
-        /*
-        Cliente cliente_01 = new Cliente("02850435902", 1980, "Marcos da Rocha Souza", "mr_souza@gmail.com");
-        Cliente cliente_02 = new Cliente("03510400902", 1985, "Ana Clara Marques", "aninha@gmail.com");
-        Cliente cliente_03 = new Cliente("04564238906", 1975, "Pedro de Alcantara", "pedro_75@gmail.com");
-        Cliente cliente_04 = new Cliente("03510400902", 1985, "Ana Clara Marques", "aninha@gmail.com");
+        /*--------------------------------------------------------------------------------*/
+        System.out.println("Conta 02");
+        System.out.println("Insira o numero da conta");
+        numero = read.nextInt();
 
-        Conta conta_01 = new Conta(1521, 750.63);
-        Conta conta_02 = new Conta(1314, 10.36);
-        Conta conta_03 = new Conta(2368, 1523.00);
-        Conta conta_04 = new Conta(3568, -50.45);
-        Conta conta_05 = new Conta(2224, 91.23);
-        Conta conta_06 = new Conta(1019, -70.35);
-        */
+        System.out.println("Insira o saldo");
+        saldo = read.nextFloat();
+
+        Conta conta_02 = new Conta(numero, saldo);
+
+        System.out.println("Insira o valor a ser debitado: ");
+        debito = read.nextFloat();
+
+        conta_02.debitaSaldo(debito);
+
+        System.out.println("Insira o valor a ser creditado: ");
+        credito = read.nextFloat();
+
+        conta_02.creditaSaldo(credito);
+
+        /*--------------------------------------------------------------------------------*/
+        System.out.println("Conta 03");
+        System.out.println("Insira o numero da conta");
+        numero = read.nextInt();
+
+        System.out.println("Insira o saldo");
+        saldo = read.nextFloat();
+
+        Conta conta_03 = new Conta(numero, saldo);
+
+        System.out.println("Insira o valor a ser debitado: ");
+        debito = read.nextFloat();
+
+        conta_03.debitaSaldo(debito);
+
+        System.out.println("Insira o valor a ser creditado: ");
+        credito = read.nextFloat();
+
+        conta_03.creditaSaldo(credito);
+
+        /*--------------------------------------------------------------------------------*/
+        System.out.println("Conta 04");
+        System.out.println("Insira o numero da conta");
+        numero = read.nextInt();
+
+        System.out.println("Insira o saldo");
+        saldo = read.nextFloat();
+
+        Conta conta_04 = new Conta(numero, saldo);
+
+        System.out.println("Insira o valor a ser debitado: ");
+        debito = read.nextFloat();
+
+        conta_04.debitaSaldo(debito);
+
+        System.out.println("Insira o valor a ser creditado: ");
+        credito = read.nextFloat();
+
+        conta_04.creditaSaldo(credito);
+
+        /*--------------------------------------------------------------------------------*/
+        System.out.println("Conta 05");
+        System.out.println("Insira o numero da conta");
+        numero = read.nextInt();
+
+        System.out.println("Insira o saldo");
+        saldo = read.nextFloat();
+
+        Conta conta_05 = new Conta(numero, saldo);
+
+        System.out.println("Insira o valor a ser debitado: ");
+        debito = read.nextFloat();
+
+        conta_05.debitaSaldo(debito);
+
+        System.out.println("Insira o valor a ser creditado: ");
+        credito = read.nextFloat();
+
+        conta_05.creditaSaldo(credito);
+
+        /*--------------------------------------------------------------------------------*/
+        System.out.println("Conta 06");
+        System.out.println("Insira o numero da conta");
+        numero = read.nextInt();
+
+        System.out.println("Insira o saldo");
+        saldo = read.nextFloat();
+
+        Conta conta_06 = new Conta(numero, saldo);
+
+        System.out.println("Insira o valor a ser debitado: ");
+        debito = read.nextFloat();
+
+        conta_06.debitaSaldo(debito);
+
+        System.out.println("Insira o valor a ser creditado: ");
+        credito = read.nextFloat();
+
+        conta_06.creditaSaldo(credito);
+
+
+        System.out.println("Cliente 01: \n");
+        System.out.println(cliente_01.retornaCliente());
+        System.out.println("Cliente 02: \n");
+        System.out.println(cliente_02.retornaCliente());
+        System.out.println("Cliente 03: \n");
+        System.out.println(cliente_03.retornaCliente());
+        System.out.println("Cliente 04: \n");
+        System.out.println(cliente_04.retornaCliente());
+
+        System.out.println("Conta 01");
+        System.out.println(conta_01.retornaConta());
+        System.out.println("Conta 02");
+        System.out.println(conta_02.retornaConta());
+        System.out.println("Conta 03");
+        System.out.println(conta_03.retornaConta());
+        System.out.println("Conta 04");
+        System.out.println(conta_04.retornaConta());
+        System.out.println("Conta 05");
+        System.out.println(conta_05.retornaConta());
+        System.out.println("Conta 06");
+        System.out.println(conta_06.retornaConta());
 
         read.close();
     }
