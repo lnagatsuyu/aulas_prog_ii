@@ -21,7 +21,9 @@ public class Principal {
         String email = read.nextLine();
 
         Cliente cliente_01 = new Cliente(cpf, anoNascimento, nome, email);
-
+        
+        Cliente cliente_03 = new Cliente();
+        cliente_03.setCpf(ler.nextLine());
 
         System.out.println("Insira o numero da conta");
         int numero = read.nextInt();
