@@ -1,6 +1,6 @@
 public class Conta {
-    int numero;
-    float saldo;
+    public int numero;
+    public float saldo;
 
     public Conta(int numero, float saldo) {
         this.numero = numero;
