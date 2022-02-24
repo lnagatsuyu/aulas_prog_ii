@@ -1,9 +1,9 @@
 public class Cliente {
 
-    String cpf;
-    int anoNascimento;
-    String nome;
-    String email;
+    public String cpf;
+    public int anoNascimento;
+    public String nome;
+    public String email;
 
     public Cliente(String cpf, int anoNascimento, String nome, String email) {
         this.cpf = cpf;
